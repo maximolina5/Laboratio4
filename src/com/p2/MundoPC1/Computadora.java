@@ -16,18 +16,20 @@ public class Computadora {
     private Monitor monitor;
     private Teclado teclado;
     private Raton raton;
+    private Parlante parlante;
     private double precio;
 
     private Computadora() {
-         this.idComputadora = ++contadorComputadoras;
+         
     }
 
-    public Computadora(String nombre, Monitor monitor, Teclado teclado, Raton raton, double precio) {
+    public Computadora(String nombre, Monitor monitor, Teclado teclado, Raton raton,Parlante parlante, double precio) {
         this.nombre = nombre;
         this.monitor = monitor;
         this.teclado = teclado;
         this.raton = raton;
         this.precio = precio;
+        this.parlante=parlante;
         this.idComputadora=++contadorComputadoras;
     }
 
@@ -78,7 +80,7 @@ public class Computadora {
     
     @Override
     public String toString() {
-        return "computadora{" + "idComputadora=" + idComputadora + ", nombre=" + nombre + ", monitor=" + monitor + ", teclado=" + teclado + ", raton=" + raton + ", precio=" + precio + '}';
+        return "computadora{" + "idComputadora=" + idComputadora + ", nombre=" + nombre +"\n"+"monitor= " + monitor +"\n"+ "teclado= " + teclado +"\n"+"raton= " + raton +"\n"+"Parlante= " +parlante+"\n"+"precio= " + precio + '}';
     }
     
     

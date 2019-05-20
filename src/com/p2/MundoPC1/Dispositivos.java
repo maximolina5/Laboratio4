@@ -9,12 +9,14 @@ package com.p2.MundoPC1;
  *
  * @author maxim
  */
-public class DispositivoDeEntrada {
+public class Dispositivos {
     private String tipoEntrada;
     private String marca;
+    private final String tipoDeDispositivo;
 
-    public DispositivoDeEntrada(String tipoEntrada, String marca) {
+    public Dispositivos(String tipoEntrada, String marca,String tipoDeDispositivo) {
         this.tipoEntrada = tipoEntrada;
+        this.tipoDeDispositivo=tipoDeDispositivo;
         this.marca = marca;
     }
 
@@ -37,6 +39,6 @@ public class DispositivoDeEntrada {
     
     @Override
     public String toString() {
-        return "DispositivoDeEntrada{" + "tipoEntrada=" + tipoEntrada + ", marca=" + marca + '}';
+        return "Dispositivo{"+ "tipoEntrada= " + tipoEntrada + ", marca= " + marca +" tipoDeDispositivo= "+tipoDeDispositivo+ '}';
     }   
 }

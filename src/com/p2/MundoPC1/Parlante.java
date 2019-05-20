@@ -9,23 +9,22 @@ package com.p2.MundoPC1;
  *
  * @author maxim
  */
-public class Teclado extends Dispositivos{
-    private int idTeclado;
-    private int contadorTeclado;
+public class Parlante extends Dispositivos {
+    private final int idParlante;
+    private static int contadorParlante;
 
-    public Teclado(String tipoEntrada, String marca, String tipoDeEntrada) {
+    public Parlante(String tipoEntrada, String marca, String tipoDeEntrada) {
         super(tipoEntrada, marca,tipoDeEntrada);
-        this.idTeclado=++contadorTeclado;
+        this.idParlante=++contadorParlante;
     }
 
-    public int getIdTeclado() {
-        return idTeclado;
+    public int getIdParlante() {
+        return idParlante;
     }
 
     @Override
     public String toString() {
         return super.toString(); //To change body of generated methods, choose Tools | Templates.
     }
-
-    
+       
 }

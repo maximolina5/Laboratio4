@@ -9,12 +9,12 @@ package com.p2.MundoPC1;
  *
  * @author maxim
  */
-public class Raton extends DispositivoDeEntrada {
+public class Raton extends Dispositivos {
     private int idRaton;
     private static int contadorRaton;
 
-    public Raton( String tipoEntrada, String marca) {
-        super(tipoEntrada, marca);
+    public Raton( String tipoEntrada, String marca, String tipoDeEntrada) {
+        super(tipoEntrada, marca,tipoDeEntrada);
         this.idRaton=++contadorRaton;
     }
 
